@@ -1,6 +1,6 @@
 import cv2
 
-filename='FILEPATH-OF-IMAGE'
+filename='FILEPATH-TO-IMAGE'
 img=cv2.imread(filename)
 print('Height if image: ',len(img))
 print('Width of image: ',len(img[0]))
