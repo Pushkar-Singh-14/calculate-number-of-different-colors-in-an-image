@@ -1,7 +1,6 @@
 import cv2
-import numpy as np
 
-filename='/Users/pushkarsingh/Downloads/16rgb.png'
+filename='FILEPATH-OF-IMAGE'
 img=cv2.imread(filename)
 print('Height if image: ',len(img))
 print('Width of image: ',len(img[0]))
@@ -12,9 +11,9 @@ for i in range(len(img)):
         
 print('Total number of pixels: ',len(pixel_data))
 
-words=set()
+colors=set()
 
-for word in pixel_data:
-    words.add(str(word))
+for color in pixel_data:
+    colors.add(str(color))
     
-print('Total number of different colors: ',len(words)-1)
+print('Total number of different colors: ',len(colors)-1)
